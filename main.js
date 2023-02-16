@@ -30,16 +30,14 @@ class ProductManager {
     getProducts() {
         const products = this.products;
         return products;
-        
     }
     getProductById(id){
         const products = this.getProducts();
         let productsById;
-        const notFound = 'Not Found'
         products.map(el => {
             el.id === id && (productsById = el);
         });
-        return productsById ? console.log(productsById) : console.log(notFound);
+        return productsById ? console.log(productsById) : console.log('No encontrado');
     }
 }
 
@@ -51,7 +49,18 @@ productsManager.addProduct({
     price: 50200,
     thumbnail: 'Sinimagen',
     code:'behqhf55',
-    stock:4
+    stock: 4
+});
+
+productsManager.addProduct({
+    title:'Palo de Hockey TK',
+    description:'(90% Carbono, curva perfecto para arrastrada y flick',
+    price: 50300,
+    thumbnail: 'Sinimagen',
+    code:'behqhf55bfuoe',
+    stock: 1
 });
 
 console.log(productsManager.getProducts());
+
+productsManager.getProductById(3);
