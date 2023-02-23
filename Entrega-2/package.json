@@ -1,0 +1,13 @@
+{
+  "type": "module",
+  "name": "entregable-2-rodriguez",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/ProductManager.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
